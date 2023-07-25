@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+html{
+    font-size: 16px;
+}
+header{
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100%;
+    height: 8vh;
+    color: white;
+    padding: 0 2rem;
+    
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    /* text-decoration: solid; */
+}
+.toggle{
+    display: none;
+}
+/* .ouvrir{
+    display: block;
+}
+.fermer{
+    display: none;
+} */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 500px;
+}
+.menu li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.btn{
+    /* border: 0;
+    background: pink;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px; */
+    padding: 10px 20px;
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .hero */
+@media screen and (max-width : 900px){
+     .toggle{
+         display: block;
+         font-size: 2rem;
+         cursor: pointer;
+         position: relative;
+         z-index: 20;
+     }
+     .logo{
+         position: relative;
+         z-index: 26;
+     }
+     .ouvrir{
+         display: block;
+       /* display: none; */
+     }
+     .fermer{
+        display: none;
+        color: aqua;
+        
+     }
+    .open .ouvrir{
+         display: none;
+         
+     }
+     .open .fermer{
+        display: block;
+        
+    }
+     .menu{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background: black;
+         /* font-style: ; */
+         flex-direction: column;
+         padding: 2rem;
+        justify-content: space-around;
+        transform: translate(-100%);
+        transition: 1s;
+     }
+     .open .menu{
+         transform: translate(0);
+     }
+    /* .open.fermer{
+        display: block;
+    } */
+}
+
+
+
+
+.card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: antiquewhite;
+}
+.order1{
+    padding-right: 40%;
+    right: 0%;
+}
+.order2{
+    display: flex;
+      /* padding-left: 10%; */
+}
+.order3{
+    font-size: 40px;
+ }
+.order4{
+    font-size: 30px;
+ }
+ .button{
+    background-color: orange;
+     padding: 10px 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button1{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+   }
+   .element{
+    position: absolute;
+    /* z-index: 1; */
+    right: 20%;
+    margin-bottom: 10%;
+ }
+ .element1{
+    position: absolute;
+    /* z-index: 2; */
+    right: 15%;
+    padding-top: 3%;
+    right: 10%;
+    padding-left: 0%;
+}
+.element2{
+    position: absolute;
+    /* z-index: 3; */
+    right: 13%;
+    padding-top:8%;
+    /* padding-right: 5%; */
+}
+
+
+
+
+
+
+
+
+
+
+.cover2{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+ }.cover6{
+    border: #000;
+    padding: 30px 40px;
+    border: 2px solid orange;
+ }
+ .cover7{
+    background-color: antiquewhite;
+    padding: 30px 40px;
+    
+ }
+ .cover5{
+    font-size: 40px;
+    
+ }
+ .content1{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+ .content2{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+ }
